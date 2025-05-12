@@ -119,7 +119,7 @@ void loop() {
         //Clear the display
         lcd.clear();
         
-        if (RangeInInches == 0) {
+        if (RangeInInches <= 0) {
             symbol(7, 0);
             lcd.setCursor(0, 1);
             lcd.print(" SENSOR BLOCKED");
